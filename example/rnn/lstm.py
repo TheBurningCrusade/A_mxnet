@@ -222,9 +222,9 @@ def setup_rnn_model(ctx,
     print out_shape
     print 'aux_shape'
     print aux_shape
-    print 'ctx'
-    print ctx
-    print type(ctx)
+    #print 'ctx'
+    #print ctx
+    #print type(ctx)
     arg_arrays = [mx.nd.zeros(s, ctx) for s in arg_shape]
     #print 'arg_arrays'
     #print arg_arrays
@@ -246,6 +246,15 @@ def setup_rnn_model(ctx,
             param_blocks.append((i, arg_dict[name], args_grad[name], name))
         else:
             assert name not in args_grad
+
+
+    print 'param_blicks'
+    #print param_blocks
+    for i in range(len(param_blocks)):
+        print >> sys.stdout, '%d\t%s' % (param_blocks[i][0], param_blocks[i][3])
+    print len(param_blocks)
+
+
     out_dict = dict(zip(rnn_sym.list_outputs(), rnn_exec.outputs))
 
     init_states = [LSTMState(c=arg_dict["l%d_init_c" % i],
@@ -264,6 +273,8 @@ def setup_rnn_model(ctx,
 
 
 def set_rnn_inputs(m, X, begin):
+    #print 'XXXXXX'
+    #print X.shape[0]
     seq_len = len(m.seq_data)
     batch_size = m.seq_data[0].shape[0]
     for seqidx in range(seq_len):
@@ -271,8 +282,17 @@ def set_rnn_inputs(m, X, begin):
         next_idx = (begin + seqidx + 1) % X.shape[0]
         x = X[idx, :]
         y = X[next_idx, :]
+        print 'idx'
+        print idx
+        print 'next_idx'
+        print next_idx
+        #print 'x'
+        #print len(x)
+        #print 'y'
+        #print len(y)
         mx.nd.array(x).copyto(m.seq_data[seqidx])
         m.seq_labels[seqidx*batch_size : seqidx*batch_size+batch_size] = y
+    #print 'xxxxxxxxxxxxxx'
 
 def calc_nll(seq_label_probs, X, begin):
     nll = -np.sum(np.log(seq_label_probs.asnumpy())) / len(X[0,:])
@@ -296,6 +316,7 @@ def train_lstm(model, X_train_batch, X_val_batch,
     epoch_counter = 0
     log_period = max(1000 / seq_len, 1)
     last_perp = 10000000.0
+
     for iteration in range(num_round):
         nbatch = 0
         train_nll = 0
