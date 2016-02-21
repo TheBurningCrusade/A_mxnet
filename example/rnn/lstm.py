@@ -19,6 +19,15 @@ def lstm(num_hidden, indata, prev_state, param, seqidx, layeridx, dropout=0.):
     """LSTM Cell symbol"""
     if dropout > 0.:
         indata = mx.sym.Dropout(data=indata, p=dropout)
+    '''这里的i2h和h2h是由裸的indata和prev_stata.h经过FullyConnected得到的,
+    表示裸的indata和prev_state.h和他们的权重矩阵相乘，得到每个隐藏单元的
+    输入值,这些输入值是隐藏单元激活函数的输入,这里的激活函数不是一个单一的
+    函数，而是由忘记门，输入没，输出门构成的一个block，而整个bolck则替代
+    隐藏单元激活函数。
+    要注意这里设置的隐藏单元的个数是正常的4倍，这就表示一个block中的忘记门，
+    输入门，输入转化，输入门都使用了自己单独的权重矩阵和裸(indata和prev_state.h)
+    进行相乘运算，从而得到不同的输入数据作为各自门的输入
+    '''
     i2h = mx.sym.FullyConnected(data=indata,
                                 weight=param.i2h_weight,
                                 bias=param.i2h_bias,
