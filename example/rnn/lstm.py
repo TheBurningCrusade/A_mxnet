@@ -40,6 +40,12 @@ def lstm(num_hidden, indata, prev_state, param, seqidx, layeridx, dropout=0.):
                                 name="t%d_l%d_h2h" % (seqidx, layeridx))
     #print type(i2h)
     #print type(h2h)
+    '''这里的相加表示的是i2h和h2h中的矩阵进行相加操作，本例中seq_num为35（它应该对应rnn
+    中的时刻的长度，即展开的rnn中一共由35层，每一层对应一个时刻），batch_size为20,它应该
+    是每一个时刻数据数据的基本长度，每一个代表一个单词。
+    本程序中每一个时刻indata和prev_state.h都是一个20X200的矩阵，lstm中隐藏层单元的个数设
+    定为200*4=800个，那么这里的fullyconnectd就是20X200 * 200X800的一个运算
+    '''
     gates = i2h + h2h
     # print type(gates)
     # print dir(i2h)
@@ -128,7 +134,9 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
                               param=param_cells[i],
                               seqidx=seqidx, layeridx=i, dropout=dp)
             # 使用lstm处理后的next_state和next_state.h会接着作为下一个
-            # layer的输入的, 当然最后的hidden和last_states都也会保
+            # layer的输入的, 其中hidden只保留每个seq_idx的最后一层的的
+            # 数据，而last_states保留当前所有lstm层的next_states结果，并
+            # 作为下一个seq_idx的输入
             hidden = next_state.h
             # print dir(hidden)
             # last_states[i]的值会作为后续的seq使用
@@ -142,9 +150,10 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
     concat = mx.sym.Concat(*last_hidden, dim = 0)
     # print type(concat)
     # 将生成的的35个hidden，连接起来，并将他们和num_label个异常单元进行fully
-    # connected, 即矩阵相乘
+    # connected, 即矩阵相乘，这里每一个hidden都是一个200维的向量
     #print 'num_label'
     #print num_label
+    # 这里的最后一层的隐藏层有10000个，它的权重矩阵是10000X200
     fc = mx.sym.FullyConnected(data=concat,
                                weight=cls_weight,
                                bias=cls_bias,
@@ -198,7 +207,7 @@ def setup_rnn_model(ctx,
     # print dir(rnn_sym)
     # print type(rnn_sym)
     arg_names = rnn_sym.list_arguments()
-    # last_state中的c和h都是存储的是经过2层lstm处理之后的解雇，因为lstm在
+    # last_state中的c和h都是存储的是经过2层lstm处理之后的结果，因为lstm在
     # 每层的个数都是200个隐藏单元,每个隐藏单元的输出都是一个输出的一个数值
     output_names = rnn_sym.list_outputs()
     print 'output_names'
@@ -210,12 +219,14 @@ def setup_rnn_model(ctx,
     input_shapes = {}
     for name in arg_names:
         if name.endswith("init_c") or name.endswith("init_h"):
+            # 这里制定了第一时刻时，需要需要以来的prev_state, 设定是一个20X200的矩阵
             input_shapes[name] = (batch_size, num_hidden)
         elif name.endswith("data"):
             input_shapes[name] = (batch_size, )
         else:
             pass
     print 'input_shapes'
+    print len(input_shapes)
     print input_shapes
     #for i in range(len(input_shapes)):
     #    print >> '%d : %s' % (i, input_shapes[i])
@@ -242,12 +253,17 @@ def setup_rnn_model(ctx,
     for shape, name in zip(arg_shape, arg_names):
         if is_param_name(name):
             args_grad[name] = mx.nd.zeros(shape, ctx)
+    #print 'args_grad'
+    #print args_grad
+    #print len(args_grad)
 
     rnn_exec = rnn_sym.bind(ctx=ctx, args=arg_arrays,
                             args_grad=args_grad,
                             grad_req="add")
     param_blocks = []
     arg_dict = dict(zip(arg_names, rnn_exec.arg_arrays))
+    #print 'arg_dict'
+    #print arg_dict
     for i, name in enumerate(arg_names):
         if is_param_name(name):
             initializer(name, arg_dict[name])
