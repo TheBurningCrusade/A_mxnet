@@ -111,7 +111,7 @@ model = lstm.setup_rnn_model(mx.cpu(),
                              batch_size=batch_size,
                              input_size=vocab,
                              initializer=mx.initializer.Uniform(0.1),dropout=0.5)
-'''
+# max_grad_norm=5.0 | update_period=1 | wd=0 | learning_rate=0.1 | num_roud=25
 lstm.train_lstm(model, X_train_batch, X_val_batch,
                 num_round=num_round,
                 half_life=2,
@@ -119,6 +119,5 @@ lstm.train_lstm(model, X_train_batch, X_val_batch,
                 update_period=update_period,
                 learning_rate=learning_rate,
                 wd=wd)
-'''
 #               momentum=momentum)
 

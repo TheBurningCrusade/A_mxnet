@@ -154,6 +154,7 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
     #print 'num_label'
     #print num_label
     # 这里的最后一层的隐藏层有10000个，它的权重矩阵是10000X200
+    # 表示的是最后的隐藏层到输出层之后的矩阵相乘
     fc = mx.sym.FullyConnected(data=concat,
                                weight=cls_weight,
                                bias=cls_bias,
@@ -225,12 +226,18 @@ def setup_rnn_model(ctx,
             input_shapes[name] = (batch_size, )
         else:
             pass
+    # input_shapes除了有seq_num(35)个输入数据，还有４个0(1)_init_c和0(1)_init_h
+    # 一共39个参数
     print 'input_shapes'
     print len(input_shapes)
     print input_shapes
     #for i in range(len(input_shapes)):
     #    print >> '%d : %s' % (i, input_shapes[i])
     #print len(input_shapes)
+    '''arg_shape 和 arg_names是对应的，其中arg_names以list的形式存储rnn中的
+    所有参数; arg_shape则以list存储对应arg_names参数的维度; arg_array也和
+    arg_shape 和　arg_names对应，它也是list类型，其中每个元素是mx.nd，是
+    每个参数的的存储空间'''
     arg_shape, out_shape, aux_shape = rnn_sym.infer_shape(**input_shapes)
     print 'arg_shape'
     #for i in range(len(arg_shape)):
@@ -249,6 +256,7 @@ def setup_rnn_model(ctx,
     #print 'arg_arrays'
     #print arg_arrays
     #print len(arg_arrays)
+    # args_grad是每个参数对应的求偏导的结果，它和arg_array拥有一样的维度
     args_grad = {}
     for shape, name in zip(arg_shape, arg_names):
         if is_param_name(name):
@@ -273,8 +281,8 @@ def setup_rnn_model(ctx,
             assert name not in args_grad
 
 
-    print 'param_blicks'
-    #print param_blocks
+    print 'param_blocks'
+    print param_blocks
     for i in range(len(param_blocks)):
         print >> sys.stdout, '%d\t%s' % (param_blocks[i][0], param_blocks[i][3])
     print len(param_blocks)
@@ -298,8 +306,11 @@ def setup_rnn_model(ctx,
 
 
 def set_rnn_inputs(m, X, begin):
-    #print 'XXXXXX'
-    #print X.shape[0]
+    '''这里是为epoch即一个seq_num=35设置输入输出，输入都是一个20维的向量即为
+    X的列数（即X的一行），输出为输入所在行的下一行，也是20维的向量.一行数据
+    既作为该轮（seqidx)的输入，同时又作为上一轮(seqidx - 1)的输出。这样一个
+    epoch就会又35 X 20 = 700的输出向量(seq_labels)
+    '''
     seq_len = len(m.seq_data)
     batch_size = m.seq_data[0].shape[0]
     for seqidx in range(seq_len):
@@ -307,14 +318,14 @@ def set_rnn_inputs(m, X, begin):
         next_idx = (begin + seqidx + 1) % X.shape[0]
         x = X[idx, :]
         y = X[next_idx, :]
-        print 'idx'
+        '''print 'idx'
         print idx
         print 'next_idx'
         print next_idx
-        #print 'x'
-        #print len(x)
-        #print 'y'
-        #print len(y)
+        print 'x'
+        print len(x)
+        print 'y'
+        print len(y)'''
         mx.nd.array(x).copyto(m.seq_data[seqidx])
         m.seq_labels[seqidx*batch_size : seqidx*batch_size+batch_size] = y
     #print 'xxxxxxxxxxxxxx'
@@ -323,6 +334,7 @@ def calc_nll(seq_label_probs, X, begin):
     nll = -np.sum(np.log(seq_label_probs.asnumpy())) / len(X[0,:])
     return nll
 
+#max_grad_norm=5.0 | update_period=1 | wd=0 | learning_rate=0.1 | num_roud=25 
 def train_lstm(model, X_train_batch, X_val_batch,
                num_round, update_period,
                optimizer='sgd', half_life=2,max_grad_norm = 5.0, **kwargs):
@@ -336,13 +348,17 @@ def train_lstm(model, X_train_batch, X_val_batch,
 
     opt = mx.optimizer.create(optimizer,
                               **kwargs)
+    print 'opt'
+    print type(opt)
 
     updater = mx.optimizer.get_updater(opt)
+    print 'updater'
+    print type(updater)
     epoch_counter = 0
     log_period = max(1000 / seq_len, 1)
     last_perp = 10000000.0
-
-    for iteration in range(num_round):
+    
+    for iteration in range(1):
         nbatch = 0
         train_nll = 0
         # reset states
@@ -356,9 +372,21 @@ def train_lstm(model, X_train_batch, X_val_batch,
             set_rnn_inputs(m, X_train_batch, begin=begin)
             m.rnn_exec.forward(is_train=True)
             # probability of each label class, used to evaluate nll
+            print 'm.seq_outputs'
+            #print type(m.seq_outputs)
+            print m.seq_outputs.shape
+            print 'm.seq_labes'
+            print m.seq_labels.shape
+            '''mx.nd.choos_element_0index这个的第一个参数是一个矩阵，在这里是一个2维
+            的；第二个参数是一个一维向量，向量的长度和第一个参数的行数是一样长的，
+            向量中的每一个值都是对应行的index。函数的功能是第二个参数的下标为第一个
+            参数的行的索引下标，第二个参数的下标对应的值为第一个参数在该行的列索引下
+            标,这样就会取出一个向量'''
             seq_label_probs = mx.nd.choose_element_0index(m.seq_outputs,m.seq_labels)
             m.rnn_exec.backward()
             # transfer the states
+            # 将前面的seq_num(35)个计算的到的last_state，作为下一个时刻(seq_num
+            # =35)的输入，这样就相当于整个rnn的展开层是无限增加的
             for init, last in zip(m.init_states, m.last_states):
                 last.c.copyto(init.c)
                 last.h.copyto(init.h)
@@ -388,7 +416,7 @@ def train_lstm(model, X_train_batch, X_val_batch,
         toc = time.time()
         print("Iter [%d] Train: Time: %.3f sec, NLL=%.3f, Perp=%.3f" % (
             iteration, toc - tic, train_nll / nbatch, np.exp(train_nll / nbatch)))
-
+'''
         val_nll = 0.0
         # validation set, reset states
         for state in m.init_states:
@@ -412,6 +440,7 @@ def train_lstm(model, X_train_batch, X_val_batch,
             opt.lr *= 0.5
             print("Reset learning rate to %g" % opt.lr)
         last_perp = perp
+'''
 
 def setup_rnn_sample_model(ctx,
                            params,
