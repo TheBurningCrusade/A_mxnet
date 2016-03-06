@@ -134,7 +134,7 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
                               param=param_cells[i],
                               seqidx=seqidx, layeridx=i, dropout=dp)
             # 使用lstm处理后的next_state和next_state.h会接着作为下一个
-            # layer的输入的, 其中hidden只保留每个seq_idx的最后一层的的
+            # seq的输入的, 其中hidden只保留每个seq_idx的最后一层的的
             # 数据，而last_states保留当前所有lstm层的next_states结果，并
             # 作为下一个seq_idx的输入
             hidden = next_state.h
