@@ -88,6 +88,9 @@ update_period = 1
 
 
 X_train, dic = load_data("./data/ptb.train.txt", 'train')
+#print "X_train first phase"
+# print X_train[0:21] # [  0.   0.   1.   2.   3.   4.   5.   6.   7.   8.   9.  10.  
+# 11.  12.  13. 14.  15.  16.  17.  18.  19.]
 X_val, _ = load_data("./data/ptb.valid.txt", 'valid', dic)
 X_train_batch = replicate_data(X_train, batch_size)
 X_val_batch = replicate_data(X_val, batch_size)
@@ -101,6 +104,8 @@ X_val_batch = drop_tail(X_val_batch, seq_len)
 #print 'ddddd'
 print X_train_batch.shape
 print X_val_batch.shape
+
+
 
 model = lstm.setup_rnn_model(mx.cpu(),
                              num_lstm_layer=num_lstm_layer,
