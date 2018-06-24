@@ -15,6 +15,21 @@ LSTMModel = namedtuple("LSTMModel", ["rnn_exec", "symbol",
                                      "seq_data", "seq_labels", "seq_outputs",
                                      "param_blocks"])
 
+
+"""
+arg_names
+['t0_data', 'embed_weight', 'l0_i2h_weight', 'l0_i2h_bias', 'l0_init_h', 'l0_h2h_weight', 'l0_h2h_bias', 'l0_init_c', 'l1_i2h_weight', 'l1_i2h_bias', 'l1_init_h', 'l1_h2h_weight', 'l1_h2h_bias', 'l1_init_c', 't1_data', 't2_data', 't3_data', 't4_data', 't5_data', 't6_data', 't7_data', 't8_data', 't9_data', 't10_data', 't11_data', 't12_data', 't13_data', 't14_data', 't15_data', 't16_data', 't17_data', 't18_data', 't19_data', 't20_data', 't21_data', 't22_data', 't23_data', 't24_data', 't25_data', 't26_data', 't27_data', 't28_data', 't29_data', 't30_data', 't31_data', 't32_data', 't33_data', 't34_data', 'cls_weight', 'cls_bias', 'label']
+51
+input_shapes
+39
+{'t20_data': (20,), 't8_data': (20,), 't7_data': (20,), 't2_data': (20,), 't28_data': (20,), 'l1_init_h': (20, 200), 't33_data': (20,), 't11_data': (20,), 't14_data': (20,), 't4_data': (20,), 't34_data': (20,), 't17_data': (20,), 't30_data': (20,), 't18_data': (20,), 't16_data': (20,), 't9_data': (20,), 't10_data': (20,), 't26_data': (20,), 't3_data': (20,), 't1_data': (20,), 't13_data': (20,), 't19_data': (20,), 't15_data': (20,), 't0_data': (20,), 't12_data': (20,), 'l0_init_c': (20, 200), 'l0_init_h': (20, 200), 't6_data': (20,), 't22_data': (20,), 't29_data': (20,), 't5_data': (20,), 't23_data': (20,), 't27_data': (20,), 't25_data': (20,), 'l1_init_c': (20, 200), 't31_data': (20,), 't24_data': (20,), 't21_data': (20,), 't32_data': (20,)}
+arg_shape
+[(20L,), (10000L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (10000L, 200L), (10000L,), (700L,)]
+51
+out_shape
+[(700L, 10000L), (20L, 200L), (20L, 200L), (20L, 200L), (20L, 200L)]
+"""
+
 def lstm(num_hidden, indata, prev_state, param, seqidx, layeridx, dropout=0.):
     """LSTM Cell symbol"""
     if dropout > 0.:
@@ -49,12 +64,16 @@ def lstm(num_hidden, indata, prev_state, param, seqidx, layeridx, dropout=0.):
     gates = i2h + h2h
     # print type(gates)
     # print dir(i2h)
+    print "ddd"
+
+    print gates.infer_shape
     slice_gates = mx.sym.SliceChannel(gates, num_outputs=4,
                                      name="t%d_l%d_slice" % (seqidx, layeridx))
     # print type(slice_gates)
     # print type(slice_gates[0])
     # 这是个输入门，上一个时刻的输出和此时的输入作为sigmoid函数的输入，它用来决定
-    # 应该更新的值
+    # 应该更新的值, 注意这里的Activation都是对它中矩阵的每一个元素使用sigmoid函数
+    # 也就是它不会改变输入矩阵数据的维度
     in_gate = mx.sym.Activation(slice_gates[0], act_type="sigmoid")
     # print in_gate
     # 这里的in_transform用来生成新的候选值，in_gate和in_transform的结果会进行相乘
@@ -90,7 +109,8 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
     param_cells = []
     last_states = []
     for i in range(num_lstm_layer):
-        # param_cells是两层lstm中的weigh和bias，他们之间是使用fullconnected连接的
+        # param_cells是两层lstm中的weigh和bias，他们之间是使用fullconnected连接的, 一个是输入数据的
+        # 的权重，一个是上一层输出数据的权重，其中i2h的是输入数据的权重，h2h是上一层输出数据的权重
         param_cells.append(LSTMParam(i2h_weight = mx.sym.Variable("l%d_i2h_weight" % i),
                                       i2h_bias = mx.sym.Variable("l%d_i2h_bias" % i),
                                       h2h_weight = mx.sym.Variable("l%d_h2h_weight" % i),
@@ -128,14 +148,16 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
                 dp=0.
             else:
                 dp = dropout
-            # 对于seq_num， 他的for循环, lstm只有indata和seqidx这两个参数不一样
+            # 对于seq_num， 他的for循环, lstm只有indata和seqidx这两个参数不一样,是unroll所以网络
+            # 中所有的参数都是一样的
             next_state = lstm(num_hidden, indata=hidden,
                               prev_state=last_states[i],
                               param=param_cells[i],
                               seqidx=seqidx, layeridx=i, dropout=dp)
             # 使用lstm处理后的next_state和next_state.h会接着作为下一个
             # seq的输入的, 其中hidden只保留每个seq_idx的最后一层的的
-            # 数据，而last_states保留当前所有lstm层的next_states结果，并
+            # 数据，而最后一层的数据在整个seq_num(35)计算完之后就,就会合并并且全链接输出
+            # 而last_states保留当前所有lstm层的next_states结果，并
             # 作为下一个seq_idx的输入
             hidden = next_state.h
             # print dir(hidden)
@@ -149,12 +171,13 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
     # 传入两个星号的表明将传入的参数转化成字典比如a=1,b=2 转化成{'a':1, 'b':2}
     concat = mx.sym.Concat(*last_hidden, dim = 0)
     # print type(concat)
-    # 将生成的的35个hidden，连接起来，并将他们和num_label个异常单元进行fully
+    # 将生成的的35个hidden，连接起来,就是一个700X200的矩阵，其中700=20*35，
+    #并将他们和num_label个异常单元进行fully
     # connected, 即矩阵相乘，这里每一个hidden都是一个200维的向量
     #print 'num_label'
     #print num_label
     # 这里的最后一层的隐藏层有10000个，它的权重矩阵是10000X200
-    # 表示的是最后的隐藏层到输出层之后的矩阵相乘
+    # 表示的是最后的隐藏层到输出层之后的矩阵相乘,相乘后就会得到一个700x10000的矩阵
     fc = mx.sym.FullyConnected(data=concat,
                                weight=cls_weight,
                                bias=cls_bias,
@@ -234,10 +257,10 @@ def setup_rnn_model(ctx,
     #for i in range(len(input_shapes)):
     #    print >> '%d : %s' % (i, input_shapes[i])
     #print len(input_shapes)
-    '''arg_shape 和 arg_names是对应的，其中arg_names以list的形式存储rnn中的
+    """arg_shape 和 arg_names是对应的，其中arg_names以list的形式存储rnn中的
     所有参数; arg_shape则以list存储对应arg_names参数的维度; arg_array也和
     arg_shape 和　arg_names对应，它也是list类型，其中每个元素是mx.nd，是
-    每个参数的的存储空间'''
+    每个参数的的存储空间,通过input_shapes去推导出来arg_shape"""
     arg_shape, out_shape, aux_shape = rnn_sym.infer_shape(**input_shapes)
     print 'arg_shape'
     #for i in range(len(arg_shape)):
@@ -252,6 +275,12 @@ def setup_rnn_model(ctx,
     #print 'ctx'
     #print ctx
     #print type(ctx)
+    """arg_names: 表示的是网络中所有参数的名字，这些名字在之前就已经取好了,是一个存储字符串的list；
+    arg_shape: 表示的是arg_names中每一个元素对应的的数据的维度大小,它是一个存储tuple类型的list,每个tuple
+    指的是该变量的维度;
+    arg_array: 表示的是就是根据arg_shape进行初始化的实体数据了,它也是一个list；
+    注意上述数据都是list，他们的长度都相同，并且是一一对应当的.
+    """
     arg_arrays = [mx.nd.zeros(s, ctx) for s in arg_shape]
     #print 'arg_arrays'
     #print arg_arrays
