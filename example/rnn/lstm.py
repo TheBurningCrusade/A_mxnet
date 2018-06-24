@@ -214,9 +214,9 @@ def is_param_name(name):
 
 
 def setup_rnn_model(ctx,
-                    num_lstm_layer, seq_len,
-                    num_hidden, num_embed, num_label,
-                    batch_size, input_size,
+                    num_lstm_layer, seq_len, # seq_len=35, num_lstm_layer=2
+                    num_hidden, num_embed, num_label, # num_hidden=200, num_embed=200,
+                    batch_size, input_size,  # batch_size=20
                     initializer, dropout=0.):
     print 'num_label'
     print num_label
@@ -318,6 +318,8 @@ def setup_rnn_model(ctx,
 
 
     out_dict = dict(zip(rnn_sym.list_outputs(), rnn_exec.outputs))
+    print "out_dict"
+    print out_dict
 
     init_states = [LSTMState(c=arg_dict["l%d_init_c" % i],
                              h=arg_dict["l%d_init_h" % i]) for i in range(num_lstm_layer)]
@@ -347,6 +349,10 @@ def set_rnn_inputs(m, X, begin):
         next_idx = (begin + seqidx + 1) % X.shape[0]
         x = X[idx, :]
         y = X[next_idx, :]
+        #print "x"
+        #print x
+        #print "y"
+        #print y
         '''print 'idx'
         print idx
         print 'next_idx'
@@ -369,6 +375,8 @@ def train_lstm(model, X_train_batch, X_val_batch,
                optimizer='sgd', half_life=2,max_grad_norm = 5.0, **kwargs):
     print("Training swith train.shape=%s" % str(X_train_batch.shape))
     print("Training swith val.shape=%s" % str(X_val_batch.shape))
+    print "first row data"
+    print X_train_batch[0]
     m = model
     seq_len = len(m.seq_data)
     batch_size = m.seq_data[0].shape[0]
@@ -404,7 +412,9 @@ def train_lstm(model, X_train_batch, X_val_batch,
             print 'm.seq_outputs'
             #print type(m.seq_outputs)
             print m.seq_outputs.shape
+            #print m.seq_outputs.asnumpy()
             print 'm.seq_labes'
+            #print m.seq_labels.asnumpy()
             print m.seq_labels.shape
             '''mx.nd.choos_element_0index这个的第一个参数是一个矩阵，在这里是一个2维
             的；第二个参数是一个一维向量，向量的长度和第一个参数的行数是一样长的，
@@ -564,5 +574,4 @@ def sample_lstm(model, X_input_batch, seq_len, temperature=1., sample=True):
             outputs_batch[i][:] = np.argmax(prob, axis=1)
         X_input_batch[:] = outputs_batch[i]
     return outputs_batch
-
 
