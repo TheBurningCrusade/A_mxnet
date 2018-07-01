@@ -1,0 +1,5583 @@
+nohup: ignoring input
+Loading ./data/ptb.train.txt, size of data = 929590
+Unique token: 10000
+Loading ./data/ptb.valid.txt, size of data = 73761
+Unique token: 10000
+Vocab=10000
+(46445, 20)
+(3675, 20)
+num_label
+10000
+{'handle': c_void_p(65683712)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus0>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus2>>
+{'handle': c_void_p(42160624)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus4>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus6>>
+{'handle': c_void_p(42032416)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus8>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus10>>
+{'handle': c_void_p(36831520)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus12>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus14>>
+{'handle': c_void_p(65699728)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus16>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus18>>
+{'handle': c_void_p(65707152)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus20>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus22>>
+{'handle': c_void_p(65714576)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus24>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus26>>
+{'handle': c_void_p(65722032)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus28>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus30>>
+{'handle': c_void_p(65729456)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus32>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus34>>
+{'handle': c_void_p(65736880)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus36>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus38>>
+{'handle': c_void_p(65744304)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus40>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus42>>
+{'handle': c_void_p(65751792)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus44>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus46>>
+{'handle': c_void_p(65759216)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus48>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus50>>
+{'handle': c_void_p(67195408)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus52>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus54>>
+{'handle': c_void_p(67202832)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus56>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus58>>
+{'handle': c_void_p(67210256)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus60>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus62>>
+{'handle': c_void_p(67217680)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus64>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus66>>
+{'handle': c_void_p(67225104)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus68>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus70>>
+{'handle': c_void_p(67232528)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus72>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus74>>
+{'handle': c_void_p(67240016)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus76>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus78>>
+{'handle': c_void_p(67247440)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus80>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus82>>
+{'handle': c_void_p(67254864)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus84>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus86>>
+{'handle': c_void_p(67262288)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus88>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus90>>
+{'handle': c_void_p(67269712)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus92>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus94>>
+{'handle': c_void_p(67277136)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus96>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus98>>
+{'handle': c_void_p(67284560)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus100>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus102>>
+{'handle': c_void_p(67291984)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus104>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus106>>
+{'handle': c_void_p(67299408)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus108>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus110>>
+{'handle': c_void_p(67306928)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus112>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus114>>
+{'handle': c_void_p(67314352)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus116>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus118>>
+{'handle': c_void_p(67321776)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus120>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus122>>
+{'handle': c_void_p(67329200)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus124>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus126>>
+{'handle': c_void_p(67336624)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus128>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus130>>
+{'handle': c_void_p(67344048)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus132>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus134>>
+{'handle': c_void_p(67351472)}
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus136>>
+ddd
+<bound method Symbol.infer_shape of <Symbol _plus138>>
+output_names
+['sm_output', 'l0_last_c_output', 'l1_last_c_output', 'l0_last_h_output', 'l1_last_h_output']
+arg_names
+['t0_data', 'embed_weight', 'l0_i2h_weight', 'l0_i2h_bias', 'l0_init_h', 'l0_h2h_weight', 'l0_h2h_bias', 'l0_init_c', 'l1_i2h_weight', 'l1_i2h_bias', 'l1_init_h', 'l1_h2h_weight', 'l1_h2h_bias', 'l1_init_c', 't1_data', 't2_data', 't3_data', 't4_data', 't5_data', 't6_data', 't7_data', 't8_data', 't9_data', 't10_data', 't11_data', 't12_data', 't13_data', 't14_data', 't15_data', 't16_data', 't17_data', 't18_data', 't19_data', 't20_data', 't21_data', 't22_data', 't23_data', 't24_data', 't25_data', 't26_data', 't27_data', 't28_data', 't29_data', 't30_data', 't31_data', 't32_data', 't33_data', 't34_data', 'cls_weight', 'cls_bias', 'label']
+51
+input_shapes
+39
+{'t20_data': (20,), 't8_data': (20,), 't7_data': (20,), 't2_data': (20,), 't28_data': (20,), 'l1_init_h': (20, 200), 't33_data': (20,), 't11_data': (20,), 't14_data': (20,), 't4_data': (20,), 't34_data': (20,), 't17_data': (20,), 't30_data': (20,), 't18_data': (20,), 't16_data': (20,), 't9_data': (20,), 't10_data': (20,), 't26_data': (20,), 't3_data': (20,), 't1_data': (20,), 't13_data': (20,), 't19_data': (20,), 't15_data': (20,), 't0_data': (20,), 't12_data': (20,), 'l0_init_c': (20, 200), 'l0_init_h': (20, 200), 't6_data': (20,), 't22_data': (20,), 't29_data': (20,), 't5_data': (20,), 't23_data': (20,), 't27_data': (20,), 't25_data': (20,), 'l1_init_c': (20, 200), 't31_data': (20,), 't24_data': (20,), 't21_data': (20,), 't32_data': (20,)}
+arg_shape
+[(20L,), (10000L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (800L, 200L), (800L,), (20L, 200L), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (20L,), (10000L, 200L), (10000L,), (700L,)]
+51
+out_shape
+[(700L, 10000L), (20L, 200L), (20L, 200L), (20L, 200L), (20L, 200L)]
+aux_shape
+[]
+param_blocks
+[(1, <NDArray 10000x200 @gpu(0)>, <NDArray 10000x200 @gpu(0)>, 'embed_weight'), (2, <NDArray 800x200 @gpu(0)>, <NDArray 800x200 @gpu(0)>, 'l0_i2h_weight'), (3, <NDArray 800 @gpu(0)>, <NDArray 800 @gpu(0)>, 'l0_i2h_bias'), (5, <NDArray 800x200 @gpu(0)>, <NDArray 800x200 @gpu(0)>, 'l0_h2h_weight'), (6, <NDArray 800 @gpu(0)>, <NDArray 800 @gpu(0)>, 'l0_h2h_bias'), (8, <NDArray 800x200 @gpu(0)>, <NDArray 800x200 @gpu(0)>, 'l1_i2h_weight'), (9, <NDArray 800 @gpu(0)>, <NDArray 800 @gpu(0)>, 'l1_i2h_bias'), (11, <NDArray 800x200 @gpu(0)>, <NDArray 800x200 @gpu(0)>, 'l1_h2h_weight'), (12, <NDArray 800 @gpu(0)>, <NDArray 800 @gpu(0)>, 'l1_h2h_bias'), (48, <NDArray 10000x200 @gpu(0)>, <NDArray 10000x200 @gpu(0)>, 'cls_weight'), (49, <NDArray 10000 @gpu(0)>, <NDArray 10000 @gpu(0)>, 'cls_bias')]
+1	embed_weight
+2	l0_i2h_weight
+3	l0_i2h_bias
+5	l0_h2h_weight
+6	l0_h2h_bias
+8	l1_i2h_weight
+9	l1_i2h_bias
+11	l1_h2h_weight
+12	l1_h2h_bias
+48	cls_weight
+49	cls_bias
+11
+out_dict
+{'sm_output': <NDArray 700x10000 @gpu(0)>, 'l1_last_h_output': <NDArray 20x200 @gpu(0)>, 'l0_last_h_output': <NDArray 20x200 @gpu(0)>, 'l1_last_c_output': <NDArray 20x200 @gpu(0)>, 'l0_last_c_output': <NDArray 20x200 @gpu(0)>}
+Training swith train.shape=(46445, 20)
+Training swith val.shape=(3675, 20)
+first row data
+[    0.  4150.   133.    26.  4820.    26.    26.   597.   222.    40.
+  9498.  4886.  2788.  9825.  2152.    48.   180.    32.  6344.  3401.]
+batch_size=20
+seq_len=35
+opt
+<class 'mxnet.optimizer.SGD'>
+updater
+<type 'function'>
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [28] Train: NLL=7.886, Perp=2660.280
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [56] Train: NLL=7.486, Perp=1782.173
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [84] Train: NLL=7.284, Perp=1456.815
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [112] Train: NLL=7.167, Perp=1296.585
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [140] Train: NLL=7.095, Perp=1206.116
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [168] Train: NLL=7.041, Perp=1142.310
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [196] Train: NLL=7.002, Perp=1098.613
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [224] Train: NLL=6.969, Perp=1063.242
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [252] Train: NLL=6.943, Perp=1035.918
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [280] Train: NLL=6.925, Perp=1016.900
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [308] Train: NLL=6.902, Perp=994.701
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [336] Train: NLL=6.879, Perp=972.000
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [364] Train: NLL=6.869, Perp=962.371
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [392] Train: NLL=6.857, Perp=950.543
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [420] Train: NLL=6.845, Perp=939.393
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [448] Train: NLL=6.835, Perp=929.515
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [476] Train: NLL=6.826, Perp=921.303
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [504] Train: NLL=6.815, Perp=911.314
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [532] Train: NLL=6.806, Perp=903.285
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [560] Train: NLL=6.801, Perp=898.608
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [588] Train: NLL=6.794, Perp=892.040
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [616] Train: NLL=6.790, Perp=888.526
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [644] Train: NLL=6.782, Perp=881.716
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [672] Train: NLL=6.775, Perp=875.309
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [700] Train: NLL=6.768, Perp=869.580
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [728] Train: NLL=6.762, Perp=864.221
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [756] Train: NLL=6.755, Perp=858.054
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [784] Train: NLL=6.746, Perp=850.231
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [812] Train: NLL=6.740, Perp=845.558
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [840] Train: NLL=6.733, Perp=840.050
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [868] Train: NLL=6.729, Perp=835.955
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [896] Train: NLL=6.722, Perp=830.701
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [924] Train: NLL=6.716, Perp=825.628
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [952] Train: NLL=6.711, Perp=821.509
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [980] Train: NLL=6.707, Perp=817.873
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1008] Train: NLL=6.701, Perp=813.422
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1036] Train: NLL=6.695, Perp=808.501
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1064] Train: NLL=6.690, Perp=804.283
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1092] Train: NLL=6.683, Perp=798.618
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1120] Train: NLL=6.679, Perp=795.215
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1148] Train: NLL=6.674, Perp=791.677
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1176] Train: NLL=6.668, Perp=786.883
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1204] Train: NLL=6.661, Perp=781.081
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1232] Train: NLL=6.653, Perp=775.492
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1260] Train: NLL=6.647, Perp=770.284
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1288] Train: NLL=6.641, Perp=765.862
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Epoch [1316] Train: NLL=6.637, Perp=762.981
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+m.seq_outputs
+(700L, 10000L)
+m.seq_labes
+(700L,)
+Iter [0] Train: Time: 197.341 sec, NLL=6.635, Perp=761.537
