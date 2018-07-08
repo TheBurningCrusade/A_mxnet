@@ -129,7 +129,7 @@ def lstm_unroll(num_lstm_layer, seq_len, input_size,
     for seqidx in range(seq_len):
         # embeding layer
         data = mx.sym.Variable("t%d_data" % seqidx)
-        # print data.__dict__
+        print data.__dict__
         #print 'input_size'
         #print input_size
         #print 'num_embedding'
@@ -488,8 +488,9 @@ def setup_rnn_sample_model(ctx,
                            batch_size, input_size):
     seq_len = 1
     rnn_sym = lstm_unroll(num_lstm_layer=num_lstm_layer,
-                          num_hidden=num_hidden,
                           seq_len=seq_len,
+                          input_size=input_size,
+                          num_hidden=num_hidden,
                           num_embed=num_embed,
                           num_label=num_label)
     arg_names = rnn_sym.list_arguments()
@@ -498,12 +499,26 @@ def setup_rnn_sample_model(ctx,
         if name.endswith("init_c") or name.endswith("init_h"):
             input_shapes[name] = (batch_size, num_hidden)
         elif name.endswith("data"):
-            input_shapes[name] = (batch_size, input_size)
+            #input_shapes[name] = (batch_size, input_size)
+            input_shapes[name] = (batch_size,)
         else:
             pass
+    print "prediction input_shape"
+    print input_shapes
+    print "params"
+    print params
+
+    print "input_shapes"
+    print  input_shapes
+
     arg_shape, out_shape, aux_shape = rnn_sym.infer_shape(**input_shapes)
+    print arg_names
+    print arg_shape
     arg_arrays = [mx.nd.zeros(s, ctx) for s in arg_shape]
     arg_dict = dict(zip(arg_names, arg_arrays))
+    print arg_dict
+
+
     for name, arr in params.items():
         arg_dict[name][:] = arr
     rnn_exec = rnn_sym.bind(ctx=ctx, args=arg_arrays, args_grad=None, grad_req="null")
@@ -514,11 +529,13 @@ def setup_rnn_sample_model(ctx,
         param_blocks.append((i, params_array[i][1], None, params_array[i][0]))
     init_states = [LSTMState(c=arg_dict["l%d_init_c" % i],
                              h=arg_dict["l%d_init_h" % i]) for i in range(num_lstm_layer)]
-    seq_labels = [rnn_exec.arg_dict["t%d_label" % i] for i in range(seq_len)]
+    #seq_labels = [rnn_exec.arg_dict["t%d_label" % i] for i in range(seq_len)]
+    seq_labels = rnn_exec.arg_dict["label"]
     seq_data = [rnn_exec.arg_dict["t%d_data" % i] for i in range(seq_len)]
     last_states = [LSTMState(c=out_dict["l%d_last_c_output" % i],
                              h=out_dict["l%d_last_h_output" % i]) for i in range(num_lstm_layer)]
-    seq_outputs = [out_dict["t%d_sm_output" % i] for i in range(seq_len)]
+    #seq_outputs = [out_dict["t%d_sm_output" % i] for i in range(seq_len)]
+    seq_outputs = out_dict["sm_output"]
 
     return LSTMModel(rnn_exec=rnn_exec, symbol=rnn_sym,
                      init_states=init_states, last_states=last_states,
@@ -548,9 +565,11 @@ def _choice(population, weights):
 
 def sample_lstm(model, X_input_batch, seq_len, temperature=1., sample=True):
     m = model
-    vocab = m.seq_outputs[0].shape[1]
+    #vocab = m.seq_outputs[0].shape[1]
+    vocab = m.seq_outputs.shape[1]
     batch_size = m.seq_data[0].shape[0]
-    outputs_ndarray = mx.nd.zeros(m.seq_outputs[0].shape)
+    #outputs_ndarray = mx.nd.zeros(m.seq_outputs[0].shape)
+    outputs_ndarray = mx.nd.zeros(m.seq_outputs.shape)
     outputs_batch = []
     tmp = [i for i in range(vocab)]
     for i in range(seq_len):
@@ -558,7 +577,8 @@ def sample_lstm(model, X_input_batch, seq_len, temperature=1., sample=True):
     for i in range(seq_len):
         set_rnn_inputs(m, X_input_batch, 0)
         m.rnn_exec.forward(is_train=False)
-        outputs_ndarray[:] = m.seq_outputs[0]
+        #outputs_ndarray[:] = m.seq_outputs[0]
+        outputs_ndarray[:] = m.seq_outputs
         for init, last in zip(m.init_states, m.last_states):
             last.c.copyto(init.c)
             last.h.copyto(init.h)

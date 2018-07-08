@@ -107,7 +107,7 @@ print X_val_batch.shape
 
 
 
-model = lstm.setup_rnn_model(mx.cpu(),
+model = lstm.setup_rnn_model(mx.gpu(),
                              num_lstm_layer=num_lstm_layer,
                              seq_len=seq_len,
                              num_hidden=num_hidden,
@@ -125,4 +125,17 @@ lstm.train_lstm(model, X_train_batch, X_val_batch,
                 learning_rate=learning_rate,
                 wd=wd)
 #               momentum=momentum)
+
+args = dict([(name, arr) for i, arr, grad_arr, name in model.param_blocks])
+batch_size = 1
+sampler = lstm.setup_rnn_sample_model(mx.cpu(), args, num_lstm_layer, num_hidden, num_embed, vocab, batch_size, vocab)
+start = 'want'
+seq_len = 75
+X_input_batch = np.zeros((1,1), dtype="float32")
+X_input_batch[0][0] = dic[start]
+#out = lstm.sample_lstm(sampler, X_input_batch, seq_len, sample=False)
+out = lstm.sample_lstm(sampler, X_input_batch, seq_len)
+lookup_table = dict((idx, c) for c, idx in dic.items())
+chars = [lookup_table[int(out[i][0])] for i in range(seq_len)]
+print(start + " ".join(chars))
 
